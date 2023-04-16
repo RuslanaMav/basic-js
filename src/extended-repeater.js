@@ -16,13 +16,14 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function repeater(str, options) {
+ // throw new NotImplementedError('Not implemented');
   let option={
-  repeatTimes: 1, 
-  separator: '+', 
-  addition: '+', 
-  additionRepeatTimes: 1, 
-  additionSeparator: '+'
-}
+    repeatTimes: 1, 
+    separator: '+', 
+    addition: '', 
+    additionRepeatTimes: 1, 
+    additionSeparator: '|'
+  }
   for (let key in options)
       option[key] = options[key]
 
